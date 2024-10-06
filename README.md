@@ -28,7 +28,7 @@ For more details, please refer to:
   - [Note 1: Repository Maintenance](#note-1-repository-maintenance)
   - [Note 2: Importance of High-Quality Data](#note-2-importance-of-high-quality-data)
   - [Note 3: Utilizing the FEED Dataset](#note-3-utilizing-the-feed-dataset)
-  - [Note 4: Available Model Weights](#note-4-available-model-weights)
+  - [Note 4: Model Weights](#note-4-available-model-weights)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
