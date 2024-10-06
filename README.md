@@ -180,11 +180,13 @@ Our **FEED** dataset ([link](https://github.com/neeek2303/FEED)), introduced in 
 
 ### Note 4: Model Weights
 
-We plan to provide version of the pre-trained model weights soon (will be located in logs.zip):
+We are providing version of the pre-trained model weights (located in logs.zip):
 
 1. **Retrain_with_17_V1_New_rand_MM_SEC_4_drop_02_stm_10_CV_05_1_1**
 
 This model will be retrained using the same parameters as described in our paper but with 17 IDs in the **FEED** dataset instead of the original 23. Since the **FEED** dataset samples were used 25% of the time during training, this change might slightly affect performance in intensive tests.
+
+Please refer to **notebooks/E_emo_infer_video.ipynb**
 
 ---
 
