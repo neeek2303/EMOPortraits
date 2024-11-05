@@ -44,7 +44,7 @@ You can set up the environment using the provided `conda-pack` archive:
 
 1. **Download the Environment Archive**
 
-   Download `sav.tar.gz` from the [Google Drive](https://drive.google.com/drive/folders/1xo_ceslle1kckpFhUS5j1-ZnYDVlToVL) or [Yandex Disk](https://disk.yandex.com/d/vq-3-wlLXlc1yw).
+   Download `sav.tar.gz` from the [Google Drive](https://drive.google.com/drive/folders/1xo_ceslle1kckpFhUS5j1-ZnYDVlToVL) or [Yandex Disk](https://disk.yandex.com/d/vq-3-wlLXlc1yw) or [Baidu Disk](https://pan.baidu.com/s/1Ge6baIHwXFdfaCKn9XHWvQ?pwd=EMOP).
 
 2. **Unpack the Environment**
 
@@ -122,7 +122,7 @@ Due to limitations with `conda-pack`, the following repositories need to be inst
 
 1. **Download Required Files**
 
-   Please download the following files from [Google Drive](https://drive.google.com/drive/folders/1xo_ceslle1kckpFhUS5j1-ZnYDVlToVL?usp=sharing) or [Yandex Disk](https://disk.yandex.com/d/vq-3-wlLXlc1yw):
+   Please download the following files from [Google Drive](https://drive.google.com/drive/folders/1xo_ceslle1kckpFhUS5j1-ZnYDVlToVL?usp=sharing) or [Yandex Disk](https://disk.yandex.com/d/vq-3-wlLXlc1yw) or [Baidu Disk](https://pan.baidu.com/s/1Ge6baIHwXFdfaCKn9XHWvQ?pwd=EMOP):
 
    - `logs.zip` (contains main model weights - not yet available)
    - `logs_s2.zip` (contains stage 2 model weights)
@@ -160,7 +160,27 @@ Due to limitations with `conda-pack`, the following repositories need to be inst
 
 ## Usage
 
-*Instructions on how to run the code, train models, and perform inference will be added here.*
+*Instructions on how to run the code, train models, and perform inference will be added here. Currently, only the video-driven pipeline is supported.*
+
+Here's an example bash command to run the video-driven pipeline with explanations:
+
+```bash
+python run_video_driven_pipeline.py \
+  --source_image_path data/person1.jpg \
+  --driven_video_path data/driver.mp4 \
+  --saved_to_path output/animated_result.mp4 \
+  --fps 30 \
+  --max_len 150
+```
+
+**Parameter explanations:**
+
+- `--source_image_path`: The path to the source image (the portrait photo you want to animate)
+- `--driven_video_path`: The path to the driving video that contains the motion you want to transfer
+- `--saved_to_path`: Where to save the resulting animated video
+- `--fps`: Frames per second for the output video (default is 25)
+- `--max_len`: Maximum number of frames to process from the driving video (default is 100). Use this to limit processing time or video length
+
 
 ---
 
