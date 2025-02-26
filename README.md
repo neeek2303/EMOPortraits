@@ -124,7 +124,7 @@ Due to limitations with `conda-pack`, the following repositories need to be inst
 
    Please download the following files from [Google Drive](https://drive.google.com/drive/folders/1xo_ceslle1kckpFhUS5j1-ZnYDVlToVL?usp=sharing) or [Yandex Disk](https://disk.yandex.com/d/vq-3-wlLXlc1yw):
 
-   - `logs.zip` (contains main model weights - not yet available)
+   - `logs.zip` (contains main model weights)
    - `logs_s2.zip` (contains stage 2 model weights)
    - `repos.zip` (contains dependencies repos and it's weights)
 
